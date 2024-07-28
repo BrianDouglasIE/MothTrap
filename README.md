@@ -16,7 +16,7 @@ $
 Creating a container is a matter of creating a `MothTrap::Container` instance:
 
 ``` raku
-need MothTrap::Container;
+use MothTrap::Container;
 
 my $container = MothTrap::Container.new;
 ```

@@ -1,10 +1,10 @@
 # MothTrap
 
-MothTrap is a small Dependency Injection Container for Raku.
+MothTrap is a Dependency Injection Container, with autowiring, for Raku.
 
 ## Installation
 
-Before using MothContainer in your project, add it to your `composer.json`
+Before using MothTrap in your project, add it to your `composer.json`
 file:
 
 ``` bash
@@ -13,15 +13,15 @@ $
 
 ## Usage
 
-Creating a container is a matter of creating a `MothContainer` instance:
+Creating a container is a matter of creating a `MothTrap::Container` instance:
 
 ``` raku
-need Moth::Container;
+need MothTrap::Container;
 
-my $container = Container::Container.new;
+my $container = MothTrap::Container.new;
 ```
 
-As many other dependency injection containers, MothContainer manages two
+As many other dependency injection containers, MothTrap manages two
 different kind of data: **services** and **parameters**.
 
 ### Defining Services
@@ -57,9 +57,9 @@ $session = $container.get('session');
 # $session = new Session.new($storage);
 ```
 
-### MothContainer as a Service Factory
+### MothTrap as a Service Factory
 
-Each time you `get` a service, MothContainer returns the **same
+Each time you `get` a service, MothTrap returns the **same
 instance** of it. If you want a different instance to be returned you can
 call the `produce` method. This will return a new instance of the 
 requested service.

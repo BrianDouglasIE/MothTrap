@@ -1,4 +1,4 @@
-# MothContainer
+# MothTrap
 
 MothContainer is a small Dependency Injection Container for Raku.
 

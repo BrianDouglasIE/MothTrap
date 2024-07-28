@@ -21,7 +21,7 @@ use MothTrap::Container;
 my $container = MothTrap::Container.new;
 ```
 
-As many other dependency injection containers, MothTrap manages two
+As with many other dependency injection containers, MothTrap manages two
 different kind of data: **services** and **parameters**.
 
 ### Defining Services

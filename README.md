@@ -8,7 +8,7 @@ Before using MothContainer in your project, add it to your `composer.json`
 file:
 
 ``` bash
-$ ./composer.phar require pimple/pimple "^3.0"
+$
 ```
 
 ## Usage

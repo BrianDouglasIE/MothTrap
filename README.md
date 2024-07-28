@@ -4,7 +4,7 @@ MothTrap is a Dependency Injection Container, with autowiring, for Raku.
 
 ## Installation
 
-Before using MothTrap in your project, add it to your `composer.json`
+Before using MothTrap in your project, add it to your `META6.json`
 file:
 
 ``` bash
